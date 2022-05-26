@@ -1,14 +1,10 @@
-import tkinter as tk
+from tkinter import *
 
+gui = Tk(className='Python Examples - Window Color')
+# set window size
+gui.geometry("400x200")
 
-root = tk.Tk()
+#set window color
+gui.configure(bg='blue')
 
-root.title('Calculator')
-
-
-B = tk.Button(root, text ="Hello")
-B.pack()
-
-
-
-root.mainloop()
+gui.mainloop() 
